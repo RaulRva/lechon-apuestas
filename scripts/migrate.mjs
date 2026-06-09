@@ -4,7 +4,7 @@ import { dirname, join } from 'path'
 import pg from 'pg'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const connectionString = process.env.DATABASE_URL
+const connectionString = "postgresql://postgres:rootBet365@@db.mhaedzsjmcxamzroaede.supabase.co:5432/postgres"
 
 if (!connectionString) {
   console.error('Error: define DATABASE_URL en tu archivo .env')
